@@ -1,0 +1,4 @@
+name: Recompensator
+consumes: {
+	power:1.5
+}
