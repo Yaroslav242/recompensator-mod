@@ -73,8 +73,8 @@ liquidCapsuleCryo.speed = 4.5;
 liquidCapsuleCryo.frontColor = Color.valueOf("6ecdec");
 liquidCapsuleCryo.backColor = Color.valueOf("6ecdec");
 liquidCapsuleCryo.ammoMultiplier = 0.3;
-// liquidCapsuleCryo.status = "freezing";
-// liquidCapsuleCryo.statusDuration = 60 * 4;
+liquidCapsuleCryo.status = "freezing";
+liquidCapsuleCryo.statusDuration = 60 * 4;
 
 const recompensator = extend(LiquidTurret, "recompensator", {});
 recompensator.health = 2250;
