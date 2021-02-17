@@ -15,7 +15,10 @@ liquidCapsuleSlag.speed = 4.5;
 liquidCapsuleSlag.frontColor = Pal.lightishOrange;
 liquidCapsuleSlag.backColor = Pal.lightOrange;
 liquidCapsuleSlag.ammoMultiplier = 0.3;
-liquidCapsuleSlag.statusDuration = 120;
+liquidCapsuleSlag.incendChance = 1;
+liquidCapsuleSlag.incendAmount = 3;
+liquidCapsuleSlag.incendSpread = 10;
+
 
 const liquidCapsuleOil = extend(ArtilleryBulletType, {
 	hit(b){
@@ -33,6 +36,9 @@ liquidCapsuleOil.splashDamage = 33;
 liquidCapsuleOil.speed = 4.5;
 liquidCapsuleOil.frontColor = Color.valueOf("313131");
 liquidCapsuleOil.ammoMultiplier = 0.3;
+liquidCapsuleOil.status = StatusEffects.tarred;
+liquidCapsuleOil.statusDuration = 60 * 2;
+
 
 const liquidCapsuleWater= extend(ArtilleryBulletType, {
 	hit(b){
@@ -51,6 +57,8 @@ liquidCapsuleWater.speed = 4.5;
 liquidCapsuleWater.frontColor = Color.valueOf("596ab8");
 liquidCapsuleWater.backColor = Color.valueOf("4aa2b8");
 liquidCapsuleWater.ammoMultiplier = 0.15;
+liquidCapsuleWater.status = StatusEffects.wet;
+liquidCapsuleWater.statusDuration = 60 * 2;
 
 const liquidCapsuleCryo = extend(ArtilleryBulletType, {
 	hit(b){
@@ -69,6 +77,8 @@ liquidCapsuleCryo.speed = 4.5;
 liquidCapsuleCryo.frontColor = Color.valueOf("6ecdec");
 liquidCapsuleCryo.backColor = Color.valueOf("6ecdec");
 liquidCapsuleCryo.ammoMultiplier = 0.3;
+liquidCapsuleCryo.status = StatusEffects.freezing;
+liquidCapsuleCryo.statusDuration = 60 * 4;
 
 const recompensator = extend(LiquidTurret, "recompensator", {});
 recompensator.health = 2250;
