@@ -15,6 +15,7 @@ liquidCapsuleSlag.speed = 4.5;
 liquidCapsuleSlag.frontColor = Pal.lightishOrange;
 liquidCapsuleSlag.backColor = Pal.lightOrange;
 liquidCapsuleSlag.ammoMultiplier = 0.3;
+liquidCapsuleSlag.statusDuration = 120;
 liquidCapsuleSlag.incendChance = 1;
 liquidCapsuleSlag.incendAmount = 3;
 liquidCapsuleSlag.incendSpread = 10;
